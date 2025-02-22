@@ -1,9 +1,9 @@
 
 "use client";
 import { useEffect, useState } from 'react';
-import { TelegramIconLarge } from '@/components/icons/SocialIcons';
+ // import { TelegramIconLarge } from '@/components/icons/SocialIcons';
 import { motion } from "framer-motion";
-import { DeferredContent } from '@/components/DeferredContent';
+ // import { DeferredContent } from '@/components/DeferredContent';
 
 export default function TelegramBoostPage() {
     const [showContent, setShowContent] = useState(false);
