@@ -1,9 +1,9 @@
 
 "use client";
 import { useEffect, useState } from 'react';
-import { YoutubeIconLarge } from '@/components/icons/SocialIcons'; // Замените на соответствующую иконку для YouTube
+ // import { YoutubeIconLarge } from '@/components/icons/SocialIcons'; // Замените на соответствующую иконку для YouTube
 import { motion } from "framer-motion";
-import { DeferredContent } from '@/components/DeferredContent';
+ // import { DeferredContent } from '@/components/DeferredContent';
 
 export default function YouTubeBoostPage() {
     const [showContent, setShowContent] = useState(false);
