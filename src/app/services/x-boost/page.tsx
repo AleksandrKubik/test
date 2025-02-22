@@ -2,8 +2,8 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
-import { DeferredContent } from '@/components/DeferredContent';
-import { XIconLarge } from '@/components/icons/SocialIcons';
+ // import { DeferredContent } from '@/components/DeferredContent';
+ // import { XIconLarge } from '@/components/icons/SocialIcons';
 
 export default function XBoostPage() {
     const [showContent, setShowContent] = useState(false);
