@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client";
 import { useEffect, useState } from 'react';
 import { YoutubeIconLarge } from '@/components/icons/SocialIcons'; // Замените на соответствующую иконку для YouTube

@@ -4,8 +4,6 @@ import { ButtonHTMLAttributes, forwardRef } from 'react';
 import Link from 'next/link';
 import { VariantProps, cva } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
-import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
 
 const buttonVariants = cva(
     'boost-button animate-button-glow inline-flex items-center justify-center',
@@ -37,12 +35,6 @@ export interface ButtonProps
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ({ className, variant, size, href, children, ...props }, ref) => {
-        const router = useRouter();
-
-        const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-            // Здесь можно добавить анимацию перед переходом
-            router.push('/x-boost');
-        };
 
         // Добавляем отступы для планшетной версии
         const paddingClasses = "pl-6 pr-6 md:pl-6 md:pr-6"; // Отступы для планшетной версии
@@ -58,16 +50,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             );
         }
         return (
-            <motion.button
-                onClick={handleClick}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+            <button
                 className={cn(buttonVariants({ variant, size, className }), paddingClasses)}
                 ref={ref}
                 {...props}
             >
                 {children}
-            </motion.button>
+            </button>
         );
     }
 );
